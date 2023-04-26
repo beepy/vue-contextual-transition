@@ -27,4 +27,4 @@ This module makes it easier to provide meaningful cross-browser transitions betw
 
 In both cases, content and element relationships are declared via directives.
 
-
+[Please see the docs for details](https://beepy.github.io/vue-contextual-transition/)
