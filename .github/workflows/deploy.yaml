@@ -21,9 +21,9 @@ jobs:
         with:
           node-version: 16
           cache: npm
-      - run: npm ci
+      - run: yarn install --frozen-lockfile
       - name: Build
-        run: npm run docs:build
+        run: yarn docs:build
       - uses: actions/configure-pages@v2
       - uses: actions/upload-pages-artifact@v1
         with:
