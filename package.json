@@ -37,9 +37,6 @@
     "dev": "vite",
     "build": "vite build && vue-tsc --emitDeclarationOnly",
     "preview": "vite preview",
-    "docs:dev": "vitepress dev docs",
-    "docs:build": "vitepress build docs",
-    "docs:serve": "vitepress serve docs",
     "lint": "eslint --ignore-path .gitignore",
     "lint:fix": "eslint --ignore-path .gitignore --fix"
   },
