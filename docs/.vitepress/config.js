@@ -3,6 +3,7 @@ const path = require('path')
 module.exports = {
   title: 'Vue Contextual Transition',
   description: 'Opinionated simple transitions between common elements across different viws.',
+  base: '/vue-contextual-transition',
   themeConfig: {
     repo: 'https://github.com/beepy/vue-contextual-transition',
     sidebar: [
