@@ -71,6 +71,7 @@
     "prettier": "^2.8.7",
     "rollup": "^2.76.0",
     "rollup-plugin-import-css": "^3.0.3",
+    "vitepress": "^1.0.0-alpha.74",
     "vue-loader": "^16.8.3",
     "webpack": "^5.73.0"
   },

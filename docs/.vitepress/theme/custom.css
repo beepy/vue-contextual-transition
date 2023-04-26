@@ -1,0 +1,54 @@
+.simple-demo {
+  background-color: rgba(128, 128, 128, 0.10);
+  padding: 16px;
+  max-width: 320px;
+  min-height: 320px;
+  border-radius: 16px;
+  margin: 0 auto;
+}
+.simple-demo p,
+.simple-demo h3 {
+  line-height: 1.1;
+  margin-top: 0;
+}
+.simple-demo .thumbnails {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.simple-demo .thumbnails div.thumbnail {
+  height: 64px;
+}
+
+.simple-demo .thumbnails div + p {
+  margin-top: 0.25em;
+}
+.simple-demo .thumbnails a {
+  flex-basis: calc(50% - 10px);
+  color: inherit;
+  cursor: pointer;
+}
+
+.simple-demo .post p {
+  /*  font-size: 7px;*/
+  line-height: 1.2;
+  margin-bottom: 1em;
+}
+
+.simple-demo .post .header {
+  height: 96px;
+  margin-bottom: 0.5em;
+}
+
+.simple-demo .post .text {
+  margin-top: 0.5em;
+}
+
+.simple-demo button.close {
+  text-align: right;
+  font-size: 36px;
+  margin-bottom: 15px;
+  display: block;
+  width: 100%;
+}
