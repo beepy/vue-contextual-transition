@@ -1,0 +1,100 @@
+.contextual-transition-container {
+  padding: 0;
+  position: relative;
+}
+
+.contextual-transition-active {
+  overflow-x: clip;
+}
+
+.contextual-transition-active.contextual-transition-allow-overflow {
+  overflow-x: visible;
+}
+
+/* reduced motion version */
+.contextual-transition-enter-active,
+.contextual-transition-leave-active {
+  transition: opacity var(--contextual-transition-duration, 222ms);
+}
+
+.contextual-transition-enter-from,
+.contextual-transition-leave-to {
+  opacity: 0;
+}
+
+.contextual-transition-enter-to,
+.contextual-transition-leave-from {
+  opacity: 1;
+}
+
+.contextual-transition-enter-to.with-transform,
+.contextual-transition-leave-from.with-transform {
+  transform: translate(0%, 0%);
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.contextual-transition-enter-active {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.contextual-transition-leave-active {
+  position: absolute;
+  left: 0;
+  width: var(--contextual-transition-width);
+  max-width: 100%;
+  max-height: var(--contextual-transition-height);
+  overflow: hidden;
+}
+
+.contextual-transition-enter-to.with-transform.contextual-transition-allow-overflow,
+.contextual-transition-leave-from.with-transform.contextual-transition-allow-overflow,
+.contextual-transition-enter-active.contextual-transition-allow-overflow,
+.contextual-transition-leave-active.contextual-transition-allow-overflow,
+.contextual-transition-allow-overflow > .contextual-transition-enter-to.with-transform,
+.contextual-transition-allow-overflow > .contextual-transition-leave-from.with-transform,
+.contextual-transition-allow-overflow > .contextual-transition-enter-active,
+.contextual-transition-allow-overflow > .contextual-transition-leave-active
+{
+  overflow: visible;
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+
+  .contextual-transition-enter-active,
+  .contextual-transition-leave-active {
+    transition: opacity var(--contextual-transition-duration, 222ms), transform var(--contextual-transition-duration, 222ms);
+  }
+
+  .contextual-transition-enter-from.with-transform {
+    transform: translate(var(--contextual-transition-page-x), var(--contextual-transition-page-y));  
+  }
+
+  .contextual-transition-leave-to.with-transform {
+    transform: translate(calc(0px - var(--contextual-transition-page-x)), calc(0px - var(--contextual-transition-page-y)));
+  }
+
+  .contextual-transition-leave-active {
+    top: var(--contextual-transition-y-offset, 0px);
+  }
+
+  /* manually supress motion */
+  .contextual-transition-reduced-motion .contextual-transition-enter-active,
+  .contextual-transition-reduced-motion .contextual-transition-leave-active {
+    transition: opacity var(--contextual-transition-duration, 222ms);
+  }
+
+  .contextual-transition-reduced-motion .contextual-transition-enter-from.with-transform {
+    transform: none;
+  }
+
+  .contextual-transition-reduced-motion .contextual-transition-leave-to.with-transform {
+    transform: none;
+  }
+
+  .contextual-transition-reduced-motion .contextual-transition-leave-active {
+    top: auto;
+  }
+}
