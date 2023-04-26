@@ -1,6 +1,6 @@
 # CSS
 
-There are about [100 lines of CSS](https://github.com/beepy/vue-contextual-transition) to support the transitions. If you're using the `ContextualTransition` component, you probably won't need to deal with them directly, but there are some cases where the follwing classes may be of use.
+There are about [100 lines of CSS](https://github.com/beepy/vue-contextual-transition/blob/main/src/styles/shared.css) to support the transitions. If you're using the `ContextualTransition` component, you probably won't need to deal with them directly, but there are some cases where the follwing classes may be of use.
 
 ### `.contextual-transition-container`
 
