@@ -1,7 +1,7 @@
 {
   "name": "vue-contextual-transition",
   "version": "0.1.0",
-  "description": "Easy-ish cross-browser transitioning between pages with shared elements and ordered pages with Vue 3.",
+  "description": "Easy-ish cross-browser transitioning between pages with shared elements and/or sequential order with Vue 3.",
   "main": "./dist/vue-contextual-transition.umd.js",
   "module": "./dist/vue-contextual-transition.es.js",
   "types": "./dist/types/library.d.ts",
