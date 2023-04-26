@@ -38,7 +38,10 @@
     "build": "vite build && vue-tsc --emitDeclarationOnly",
     "preview": "vite preview",
     "lint": "eslint --ignore-path .gitignore",
-    "lint:fix": "eslint --ignore-path .gitignore --fix"
+    "lint:fix": "eslint --ignore-path .gitignore --fix",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:serve": "vitepress serve docs"
   },
   "dependencies": {
     "@vitejs/plugin-vue": "^4.1.0",
