@@ -80,7 +80,7 @@
     top: var(--contextual-transition-y-offset, 0px);
   }
 
-  /* manually supress motion */
+  /* manually suppress motion */
   .contextual-transition-reduced-motion .contextual-transition-enter-active,
   .contextual-transition-reduced-motion .contextual-transition-leave-active {
     transition: opacity var(--contextual-transition-duration, 222ms);
