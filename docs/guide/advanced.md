@@ -1,6 +1,6 @@
 # Advanced
 
-## Per-route
+## Per-route (for plain Vue)
 
 If you don't want all routes to use the Contextual Transition component, one solution is to use routes' meta property to specify the transition details.
 
@@ -62,3 +62,16 @@ export default router;
 
 ```
 
+## Per-route (for Nuxt)
+
+In Nuxt, you can simply specify the transition with the [definePageMeta compiler macro](https://nuxt.com/docs/api/utils/define-page-meta#definepagemeta):
+
+```vue
+<script setup>
+definePageMeta({
+  pageTransition: useContextualTransition(),
+});
+</script>
+```
+
+The `<NuxtPage />` component must still be wrapped in a relatively positioned div, e.g. `<div class="contextual-transition-container">`

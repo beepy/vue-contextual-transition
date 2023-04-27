@@ -1,6 +1,10 @@
 # Getting Started
 
-## Install
+For plain Vue projects, follow the instructions below for `vue-contextual-transition`. For Nuxt projects, use the instructions for `nuxt-contextual-transition`, which is a convenience wrapper.
+
+## Vue
+
+### Install `vue-contextual-transition` for Vue Projects
 
 ::: code-group
 
@@ -31,7 +35,7 @@ app.use(VueContextualTransition)
 app.mount('#app')
 ```
 
-## Use for RouterView
+### Use for RouterView in Vue Projects
 
 In your `App.vue`:
 
@@ -73,7 +77,47 @@ export default router;
 
 ```
 
-### Shared Element Transition
+## Nuxt
+
+### Install `nuxt-contextual-transition` for Nuxt Projects
+
+::: code-group
+
+```sh [npm]
+$ npm add nuxt-contextual-transition
+```
+
+```sh [yarn]
+$ yarn add nuxt-contextual-transition
+```
+
+:::
+
+Then add `nuxt-contextual-transition` to the `modules` section of `nuxt.config.ts`:
+
+```js
+export default defineNuxtConfig({
+  modules: [
+    'nuxt-contextual-transition'
+  ]
+})
+```
+
+Finally, in `app.vue` or wherever you have your root `<NuxtPage />`:
+
+```vue
+<script setup>
+const contextualTransition = useContextualTransition();
+</script>
+
+<template>
+  <div class="contextual-transition-container">
+    <NuxtPage :transition="contextualTransition">
+  </div>
+</template>
+```
+
+## Shared Element Transition
 
 In a given view, for every element that *might* use the Contextual Transition, you should use the `v-shared-element` directive to specify the element's *role*, *id*, and *type*. The *id* and *type* should be the same for elements that are part of the same content. The role is an arbitrary string to transition like-elements. For example, you could use "title" for the title, and "img" for the thumbnail/header of a blog post.
 
@@ -143,7 +187,7 @@ If you are using UUIDs or other unique identifiers for your content, you technic
 
 :::
 
-### Relative Slide Transition
+## Relative Slide Transition
 
 For a given view that might use the Relative Slide Transition — a view that will be the direct child of the `<ContextualTransition>` component — you use the `v-relative-slide` directive to specify what its relationship to its peers is. The `value` property specifies a value (numeric is easiest) to indicate whether this content will come before or after a peer (where higher numbers come after lower numbers) and the `type` is a string indicating the type of content.
 

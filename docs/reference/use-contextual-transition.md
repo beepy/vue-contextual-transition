@@ -1,6 +1,6 @@
 # `useContextualTransition` Function
 
-For basic behavior, use the [ContextualTransition component](contextual-transition-component), but for advanced use — for example, to only apply the transition on certain routes, you can use the `useContextualTransition()` function. Note that you will be responsible for enclosing the transition inside an element with a `position` of `relative` and `padding` of `0`.
+For basic behavior, use the [ContextualTransition component](contextual-transition-component), but for advanced use — for example, to only apply the transition on certain routes, you can use the `useContextualTransition()` function, which returns a [`TransitionProps`](https://vuejs.org/api/built-in-components.html#transition) object. Note that you will be responsible for enclosing the transition inside an element with a `position` of `relative` and `padding` of `0`.
 
 `useContextualTransition()` takes a single `options` object with the following properties:
 
