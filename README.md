@@ -1,6 +1,12 @@
 # Vue Contextual Transition
 
-This module makes it easier to provide meaningful cross-browser transitions between pages — or other state changes if desired — for Vue projects. It provides a single opinionated transition that can animate between pages in two ways:
+This module makes it easier to provide meaningful cross-browser transitions between pages — or other state changes if desired — for Vue 3 projects. It provides a single opinionated transition that can animate in two ways, and looks like this:
+
+<p align="center">
+  <img src="https://beepy.github.io/vue-contextual-transition/demo.gif" />
+</p>
+
+The two styles are:
 
 1. **Shared Element Transition**: intended for navigating up and down a site's hierarchy, for example, from a blog index to a blog post. Individual elements, like a post title and a thumbnail image, can be transitioned from their appearance on an index page to their appearance on a post page, and back. Not to be confused with the experimental [Chrome feature, View Transitions](https://developer.chrome.com/docs/web-platform/view-transitions/).
 
@@ -27,4 +33,4 @@ This module makes it easier to provide meaningful cross-browser transitions betw
 
 In both cases, content and element relationships are declared via directives.
 
-
+[Please see the docs for details](https://beepy.github.io/vue-contextual-transition/)
