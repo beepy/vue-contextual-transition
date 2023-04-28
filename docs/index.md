@@ -42,10 +42,6 @@ This module makes it easier to provide meaningful cross-browser transitions betw
   </template>
   ```
 
-
-
-
-
 ---
 
 In both cases, the animation is determined by simple directives which declare the relationships the page and certain elements on the page have with other pages.

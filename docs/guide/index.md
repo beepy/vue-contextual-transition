@@ -2,6 +2,8 @@
 
 For plain Vue projects, follow the instructions below for `vue-contextual-transition`. For Nuxt projects, use the instructions for `nuxt-contextual-transition`, which is a convenience wrapper.
 
+[This example site](https://beepy.github.io/example-use-of-vue-contextual-transition/) demonstrates basic use. You can see [its source here.](https://github.com/beepy/example-use-of-vue-contextual-transition)
+
 ## Vue
 
 ### Install `vue-contextual-transition` for Vue Projects
