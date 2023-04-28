@@ -16,10 +16,19 @@ This module makes it easier to provide meaningful cross-browser transitions betw
   An element can be designated for transitioning like this:
 
   ```html
-  <img
-    src="..."
-    v-shared-element="{ id: post.slug, role: 'image', type: 'post' }"
-  />
+  <template>
+    <div>
+      <img
+        src="..."
+        v-shared-element="{ id: post.slug, role: 'image', type: 'post' }"
+      />
+      <!--
+        The above directive can be used on any descendent of the
+        `<ContextualTransition>` -- any component or element, but see
+        the "Limitations & Tips" page.
+      -->
+    </div>
+  </template>
   ```
 
   ::: tip
@@ -37,7 +46,11 @@ This module makes it easier to provide meaningful cross-browser transitions betw
   ```html
   <template>
     <div v-relative-slide="{ value: post.sortOrder, type: 'post' }">
-      <!-- page content -->
+      <!--
+        This container is the view that will be transitioning, i.e.,
+        the the child of the `<ContextualTransition>`. The
+        container's contents go here.
+      -->
     </div>
   </template>
   ```
