@@ -14,6 +14,7 @@ module.exports = {
           { text: 'Getting Started', link: '/guide/' },
           { text: 'Limitations & Tips', link: '/guide/tips' },
           { text: 'Advanced', link: '/guide/advanced' },
+          { text: 'How It Works & What It Does', link: '/guide/how-it-works' },
         ],
       }, {
         text: 'Reference',

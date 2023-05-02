@@ -10,4 +10,4 @@
 
 - When transitioning images, the size of the image must be consistent before it has been loaded — meaning essentially you must know the size or aspect ratio of the image beforehand.
 
-- For Shared Element Transitions to work, the elements must exist when the transition stars. Using fallback content while the component loads its content (such as when using `<Suspense>`) won't work.
+- For Shared Element Transitions to work, the elements must exist when the transition starts. Using fallback content while the component loads its content (such as when using `<Suspense>`) won't work.

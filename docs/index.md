@@ -48,8 +48,8 @@ This module makes it easier to provide meaningful cross-browser transitions betw
     <div v-relative-slide="{ value: post.sortOrder, type: 'post' }">
       <!--
         This container is the view that will be transitioning, i.e.,
-        the the child of the `<ContextualTransition>`. The
-        container's contents go here.
+        the entering or exiting child of the
+        `<ContextualTransition>`. The container's contents go here.
       -->
     </div>
   </template>
