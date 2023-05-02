@@ -1,5 +1,9 @@
 # Vue Contextual Transition
 
+[![npm version][npm-version-src]][npm-version-href]
+[![npm downloads][npm-downloads-src]][npm-downloads-href]
+[![License][license-src]][license-href]
+
 This module makes it easier to provide meaningful cross-browser transitions between pages — or other state changes if desired — for Vue 3 projects. It provides a single opinionated transition that can animate in two ways, and looks like this:
 
 <p align="center">
@@ -33,4 +37,20 @@ The two styles are:
 
 In both cases, content and element relationships are declared via directives.
 
-[Please see the docs for details](https://beepy.github.io/vue-contextual-transition/)
+Using Nuxt? Please see [nuxt-contextual-transition](https://github.com/beepy/nuxt-contextual-transition).
+
+[Please see the docs for details](https://beepy.github.io/vue-contextual-transition/).
+
+## Contributing
+
+Please open an issue to discuss fixes/features before making a pull request.
+
+<!-- Badges -->
+[npm-version-src]: https://img.shields.io/npm/v/vue-contextual-transition/latest.svg?style=flat&colorA=18181B&colorB=28CF8D
+[npm-version-href]: https://npmjs.com/package/vue-contextual-transition
+
+[npm-downloads-src]: https://img.shields.io/npm/dm/vue-contextual-transition.svg?style=flat&colorA=18181B&colorB=28CF8D
+[npm-downloads-href]: https://npmjs.com/package/vue-contextual-transition
+
+[license-src]: https://img.shields.io/npm/l/vue-contextual-transition.svg?style=flat&colorA=18181B&colorB=28CF8D
+[license-href]: https://npmjs.com/package/vue-contextual-transition
