@@ -63,11 +63,13 @@ const router = createRouter({
   // ... other router properties
   
   // used the saved scroll position when navigating back
-  scrollBehavior(_to, _from, savedPosition) {
+  scrollBehavior(to, _from, savedPosition) {
     if (savedPosition) {
       return savedPosition;
     } else {
-      return { top: 0 };
+      return to.hash ?
+        { el: to.hash, behavior: 'smooth' } :
+        { left: 0, top: 0 };
     }
   },
 
@@ -105,7 +107,7 @@ export default defineNuxtConfig({
 })
 ```
 
-Finally, in `app.vue` or wherever you have your root `<NuxtPage />`:
+In `app.vue` or wherever you have your root `<NuxtPage />`:
 
 ```vue
 <script setup>
@@ -118,6 +120,8 @@ const contextualTransition = useContextualTransition();
   </div>
 </template>
 ```
+
+For scrolling behavior, see [the Nuxt Options](../reference/nuxt-options).
 
 ## Shared Element Transition
 

@@ -23,7 +23,8 @@ module.exports = {
           { text: 'ContextualTransition Component', link: '/reference/contextual-transition-component' },
           { text: 'Directives', link: '/reference/directives' },
           { text: 'CSS', link: '/reference/css' },
-          { text: 'useContextualTransition Function', link: '/reference/use-contextual-transition' }
+          { text: 'useContextualTransition Function', link: '/reference/use-contextual-transition' },
+          { text: 'Nuxt Options', link: '/reference/nuxt-options' }
         ],
       }
     ],
