@@ -22,7 +22,7 @@
   </div>
 </template>
 <script setup lang="ts">
-import { withDefaults, watch, toRef } from 'vue';
+import { watch, toRef } from 'vue';
 import {
   ComparatorType,
   useContextualTransition,
