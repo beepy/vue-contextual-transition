@@ -41,7 +41,7 @@
 
 .contextual-transition-leave-active {
   position: absolute;
-  left: 0;
+  left: var(--contextual-transition-leave-left, 0px);
   width: var(--contextual-transition-width);
   max-width: 100%;
   max-height: var(--contextual-transition-height);

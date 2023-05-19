@@ -505,19 +505,24 @@ function onAfterEnter(el: Element, group: TransitioningGroup) {
 
 function onBeforeLeave(plainEl: Element, group: TransitioningGroup) {
   const el = elementToHtmlElement(plainEl);
+  let parentLeft = 0;
 
   if (el === undefined) {
     return;
   }
 
+  const elRect = el.getBoundingClientRect();
+
   if (el.parentElement !== null) {
     el.parentElement.classList.add('contextual-transition-active');
+    const parentRect = el.parentElement.getBoundingClientRect()
+    parentLeft = parentRect.left
   }
 
-  const elRect = el.getBoundingClientRect();
 
   if (elRect) {
     el.style.setProperty('--contextual-transition-width', `${elRect.width}px`);
+    el.style.setProperty('--contextual-transition-leave-left', `${elRect.left - parentLeft}px`);
   }
   el.style.setProperty(
     '--contextual-transition-duration',
