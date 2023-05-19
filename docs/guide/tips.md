@@ -1,6 +1,6 @@
 # Tips
 
-- The transitioning content view should be resilient enough not to change its flow when its `position` property becomes `absolute`; the *width* of the element will be programmatically preserved, but its margins will not.
+- The transitioning content view should be resilient enough not to change its flow when its `position` property becomes `absolute`; the *width* of the element will be programmatically preserved (and, as of v0.1.1, its horizontal position relative to its parent), but its margins will not. The element should have a css `box-sizing` attribute of `border-box`.
 
 - Avoid elements in the transitioning content that have margins that might extend past the bounds of the content container (for example, having the first child be a paragraph with a top margin). This is because when the content is transitioned out and given an absolute position, the margin that may have been moving the content down the page will no longer apply and the content will jump.
 
