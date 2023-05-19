@@ -1,6 +1,6 @@
 # Vue Contextual Transition Changelog
 
-## [unreleased]
+## [0.1.1] - 2023-05-19 10:23AM
 
 ### Fixed
 
